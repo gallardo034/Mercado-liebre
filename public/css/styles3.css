@@ -122,12 +122,17 @@ button{
     margin-left: 6vw;
 }
 
+button:hover{
+background-color: #0022AA;
+
+}
+
 ::placeholder{
     padding: 1vw;
 }
 
 footer{
-    height: 20vh;
+    height: 90vh;
     background-color: #FFF;
     }
 
@@ -150,8 +155,9 @@ footer{
     background-color: #FFF;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     text-align:center;
+    height: 100%;
     margin-top: 5vw;
     }
 

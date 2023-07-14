@@ -29,6 +29,6 @@ app.get ('/login', (req, res) => {
 
 
 app.listen (process.env.PORT, () => {
-    console.log('Servidor corriendo en el puerto 3000' + process.env.PORT + '- http://localhost:3000');
+    console.log('Servidor corriendo en el puerto' + + process.env.PORT + '- http://localhost:3000');
 });
 

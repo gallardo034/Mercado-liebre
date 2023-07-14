@@ -40,6 +40,7 @@ body {
 .logo {
     width: 27vw;
 }
+
 .vinculo-register{
     color: #000;
     text-decoration: none;
@@ -48,7 +49,7 @@ body {
 
 .box {
     margin-top: 40px;
-    display: inline-block;
+    display: flex;
 }
 
 input[type="search"] {
@@ -101,12 +102,10 @@ article {
     text-align: center;
     width: 20vw;
     height: 40vw;
-    padding: 5%;
     margin: 1%;
     margin-bottom: 5px;
     margin-left: 2.8vw;
     margin-right: 0vw;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .below-article {
@@ -129,6 +128,13 @@ height: 60px;
     top: -15px;
 }
 
+.below-article i:hover{
+    transform: rotateZ(-90deg);
+}
+
+.article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 
 #opcion {
     margin-top: 30px;
@@ -212,7 +218,7 @@ padding: 20px;
 }
 
 footer{
-height: 30vh;
+height: 30%;
 }
 
 
@@ -226,58 +232,55 @@ text-decoration: none;
     text-decoration: none;
 }
 
-.logosfooter {
-    /*margin: 5%;
-    display: inline-block;
-    width: 40%;
-    box-sizing: border-box;*/
+.logosfooter:hover{
+color: #000;
+
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 415px) { /*mobile*/
+@media (max-width: 479px) { /*mobile*/
    
-    .logo {
-        display: flex;
-        width: 50%;
-        margin: 10px;
+.logo {
+    display:inline-block;
+    width: 80%;
+    margin: 10px;
     }
 
-    input[type="search"] {
-        padding: 10px;
-        border-radius: 10px;
-        font-size: 16px;
-        width: 50%;
-        border: 0;
+input[type="search"] {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 0;
     }
 
-   
-
-    #navbar {
-        display: flex;
-        flex-direction: row;
-        margin: 10px;
+#navbar {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
     }
 
-    #opcion{
-        display: inline-block;
+#opcion{
+    display: inline-block;
     }
 
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: none;
-        width: 100%;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    width: 100%;
     }
 
-    .informacion {
-        padding: 15px;
-        width: 100%;
+.informacion {
+    padding: 15px;
+    width: 100%;
     }
 
-    .mainseccion {
-        display: none;
+.mainseccion {
+    display: none;
     }
 
 
@@ -288,7 +291,7 @@ text-decoration: none;
 article {
     display: flex;
     width: 70vw;
-    height: 55vh;
+    height: 40%;
     flex-direction: column;
     padding: 1%;
     box-shadow: none;
@@ -296,7 +299,7 @@ article {
 
 .below-article {
 width: 100%;
-height: 35%;
+height: 100px;
 }
 
 .below-article i {
@@ -309,9 +312,13 @@ height: 35%;
     background-color: #FFF;
     border-radius: 50%;
     position: relative;
-    right: -45vw;
+    right: -55vw;
     top: -15px;
 }
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 .registrado{
 margin: 5vw;
 }
@@ -332,13 +339,12 @@ margin: 5vw;
 .footertext a{
     text-decoration: none;
 }
+
 }
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 480px) {   /*tablet*/
     
-
-
     #navbar {
         height: 15vh;
         display: flex;
@@ -353,24 +359,23 @@ margin: 5vw;
     }
 
     .main {
-        display: flex;
+        display:flex;
         width: 100%;
-
+        object-fit: cover;
     }
 
     article {
-        width: 40%;
-        height: 40vw;
-        padding: 0;
-        margin-left: 8vw;
-        margin-top: 1vh;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        height: 30%;
+        margin-left: 6vw;
     }
 
     .below-article {
     display: inline-block;
     width: 100%;
-    height: 40vh;
+    height: 20%;
     }
 
     .below-article i {
@@ -383,8 +388,12 @@ margin: 5vw;
         background-color: #FFF;
         border-radius: 50%;
         position: relative;
-        right: -12vw;
+        right: -30vw;
         top: -15px;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     #opcion {
@@ -401,17 +410,49 @@ margin: 5vw;
         display: none;
     }
 
-    .footertext a{
-        text-decoration: none;
-    }
+    footer{
+        height: 40vh;
+        margin-top: 2vw;
+        background-color:whitesmoke;
+        }
+    
+        .footer-info{
+        display: block;
+        text-align: center;
+        margin-top: 3vh;
+        margin: 1vw;
+        font-weight: bold;
+        }
+    
+        .registrado{
+        display: flex;
+    
+        }
+    
+        .footertext{
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            height: 30%;
+            margin-top: 4vw;
+            align-items: baseline;
+            }
+        
+            .footertext a{
+            text-decoration: none;
+            }
+        
+            .logosfooter{
+                margin-top: 5vh;
+            }
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 769px) {   /*desktop*/
    
-
-
     #navbar {
         height: 15vh;
         display: flex;
@@ -436,11 +477,11 @@ margin: 5vw;
     }
 
     article {
-        display: inline-block;
-        width: 16vw;
-        height: 55vh;
+        display: flex;
+        width: 21vw;
+        height: 40%;
         padding: 0vw;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-left: 3vw;
     }
 
     .below-article {
@@ -448,6 +489,7 @@ margin: 5vw;
         margin-right: 0;
         margin-bottom: 5px;
         width: 100%;
+        height: 20%;
     }
 
     .below-article i {
@@ -460,8 +502,12 @@ margin: 5vw;
         background-color: #FFF;
         border-radius: 50%;
         position: relative;
-        right: -12vw;
+        right: -15vw;
         top: -15px;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .productos {
         display: flex;
@@ -484,9 +530,9 @@ margin: 5vw;
 
 
     footer{
-    height: 18px;
+    height: 30vh;
     margin-top: 2vw;
-    background-color: #FFF;
+    background-color:whitesmoke;
     }
 
     .footer-info{
@@ -503,19 +549,23 @@ margin: 5vw;
     }
 
     .footertext{
-        background-color: whitesmoke;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    margin-top: 5vw;
+    height: 30%;
+    margin-top: 4vw;
     align-items: baseline;
     }
 
-
-.footertext a{
+    .footertext a{
     text-decoration: none;
-}
+    }
+
+    .logosfooter{
+        margin-top: 5vh;
+    }
 
 }
 
