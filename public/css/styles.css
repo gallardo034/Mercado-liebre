@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #EAC926;
+    ;
+    font-family: 'roboto';
+}
+
+
+.main {
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0%;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding: 10px;
+    margin-left: 0;
+}
+
+#navbar {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+
+
+.logo {
+    width: 27vw;
+}
+.vinculo-register{
+    color: #000;
+    text-decoration: none;
+}
+
+
+.box {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+input[type="search"] {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 30vw;
+    border: 0;
+}
+
+.container-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.secciones {
+    font-size: 1rem;
+}
+
+.mainseccion {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.mainseccion ul {
+    display: flex;
+}
+
+.mainseccion li {
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+.homebanner {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+article {
+    display: flex;
+    background-color: white;
+    text-align: center;
+    width: 20vw;
+    height: 40vw;
+    padding: 5%;
+    margin: 1%;
+    margin-bottom: 5px;
+    margin-left: 2.8vw;
+    margin-right: 0vw;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.below-article {
+border-top: #ebebeb solid 1px;
+width: 100%;
+height: 60px;
+}
+
+.below-article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: -110px;
+    top: -15px;
+}
+
+
+#opcion {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.informacion {
+    background-color: whitesmoke;
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    padding: 25px;
+}
+
+.secciones {
+    font-size: rem;
+}
+
+.registrado {
+    text-align: center;
+}
+
+.burger-menu {
+    color: white;
+    background-color: rgba(0, 0, 255, 0.897);
+    display: block;
+    margin: 10px;
+    padding-top: 5px;
+    height: 40px;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-radius: 15%;
+    text-align: center;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+
+.productos {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#ofertas {
+    margin: 3%;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.precios-descuentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.precios {
+    width: 30%;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.descuentos {
+    width: 70%;
+    font-size: 1rem;
+    text-align: center;
+    color: #39b54a;
+}
+
+.nombre-prod{
+color: gray;
+font-size: 0.7rem;
+text-align: start;
+font-weight: 700;
+padding: 20px;
+}
+
+footer{
+height: 30vh;
+}
+
+
+.footer-info{
+font-size: 1rem;
+text-decoration: none;
+}
+
+.footertext {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.logosfooter {
+    /*margin: 5%;
+    display: inline-block;
+    width: 40%;
+    box-sizing: border-box;*/
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 415px) { /*mobile*/
+   
+    .logo {
+        display: flex;
+        width: 50%;
+        margin: 10px;
+    }
+
+    input[type="search"] {
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        width: 50%;
+        border: 0;
+    }
+
+   
+
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    #opcion{
+        display: inline-block;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .informacion {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .mainseccion {
+        display: none;
+    }
+
+
+.productos {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    width: 70vw;
+    height: 55vh;
+    flex-direction: column;
+    padding: 1%;
+    box-shadow: none;
+}
+
+.below-article {
+width: 100%;
+height: 35%;
+}
+
+.below-article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: -45vw;
+    top: -15px;
+}
+.registrado{
+margin: 5vw;
+}
+
+.footertext i{
+    margin: 5vw;
+}
+
+
+.footertext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 5vh;
+    }
+
+.footertext a{
+    text-decoration: none;
+}
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 480px) {   /*tablet*/
+    
+
+
+    #navbar {
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .informacion {
+        width: 100%;
+        padding-right: 60vw;padding-right: 60vw;
+    }
+
+    .main {
+        display: flex;
+        width: 100%;
+
+    }
+
+    article {
+        width: 40%;
+        height: 40vw;
+        padding: 0;
+        margin-left: 8vw;
+        margin-top: 1vh;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .below-article {
+    display: inline-block;
+    width: 100%;
+    height: 40vh;
+    }
+
+    .below-article i {
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;
+        right: -12vw;
+        top: -15px;
+    }
+
+    #opcion {
+        max-width: 350px;
+    }
+
+    .productos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .footertext a{
+        text-decoration: none;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 769px) {   /*desktop*/
+   
+
+
+    #navbar {
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #opcion {
+
+
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    .main {
+        display: flex;
+        width: 100%;
+    }
+
+    article {
+        display: inline-block;
+        width: 16vw;
+        height: 55vh;
+        padding: 0vw;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .below-article {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .below-article i {
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;
+        right: -12vw;
+        top: -15px;
+    }
+    .productos {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 2px;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .informacion{
+        display: block;
+        width: 100%;
+        padding-right: 70vw;
+    }
+
+
+    footer{
+    height: 18px;
+    margin-top: 2vw;
+    background-color: #FFF;
+    }
+
+    .footer-info{
+    display: block;
+    text-align: center;
+    margin-top: 3vh;
+    margin: 1vw;
+    font-weight: bold;
+    }
+
+    .registrado{
+    display: flex;
+
+    }
+
+    .footertext{
+        background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5vw;
+    align-items: baseline;
+    }
+
+
+.footertext a{
+    text-decoration: none;
+}
+
+}
+
