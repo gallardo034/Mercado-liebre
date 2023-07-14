@@ -7,7 +7,6 @@
       "dev": "npx nodemon app",
       "start": "node app"
 },
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
