@@ -260,6 +260,7 @@ input[type="search"] {
     display: flex;
     flex-direction: column;
     margin: 10px;
+    margin-left: 0;
     }
 
 #opcion{
@@ -364,6 +365,11 @@ margin: 5vw;
         object-fit: cover;
     }
 
+    .mainseccion{
+font-size: 0.7rem;
+
+    }
+
     article {
         display: flex;
         flex-direction: column;
@@ -460,6 +466,10 @@ margin: 5vw;
         justify-content: space-around;
         align-items: center;
         margin-bottom: 15px;
+    }
+
+    .mainseccion{
+        font-size: 1rem;
     }
 
     #opcion {
